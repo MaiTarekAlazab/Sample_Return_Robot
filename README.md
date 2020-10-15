@@ -21,4 +21,4 @@ modification.
 
 # Team Members
 - Ahmed Baza
-- [Mai Tarek](https://github.com/MaiTarekAlazab).
+- [Mai Tarek](https://github.com/MaiTarekAlazab)
