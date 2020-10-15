@@ -18,3 +18,7 @@ improve. Also, Modularity and readable codes were
 considered during the design and implementation of the
 robot software for the sake of replication and
 modification. 
+
+# Team Members
+- Ahmed Baza
+- Mai Tarek
