@@ -1,0 +1,51 @@
+
+##basic commands 
+roslaunch linorobot bringup.launch
+roslaunch linorobot slam.launch
+roslaunch tutorial_pkg gmapping.launch
+roslaunch linorobot navigate.launch
+roslaunch linorobot exploration_demo.launch 
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+roscd linorobot/rviz/
+rviz -d slam.rviz
+rviz -d navigate.rviz
+
+
+##for exploration or find object
+roslaunch freenect_launch freenect.launch depth_registration:=true
+roslaunch linorobot bringup_4_find_object.launch
+
+roslaunch linorobot exploration_demo2.launch 
+roslaunch linorobot find_object_based_tut_pkg.launch
+roslaunch tutorial_pkg tutorial_9_rviz2.launch
+
+
+##ORK
+roslaunch freenect_launch freenect.launch depth_registration:=true
+rosrun object_recognition_core detection -c  `rospack find object_recognition_linemod`/conf/detection.ros.ork
+rostopic echo /recognized_object_array
+rosrun tutorial_pkg object_node.py
+//need world fram which we added in slam.launch also need bring up to connect the tree 
+//transformation topic
+
+##send goal node
+rosrun linorobot test.py
+//need world fram which we added in slam.launch also need bring up to connect the tree 
+//transformation topic
+rostopic echo /object_pos
+
+
+##save the map
+rosrun map_server map_saver -f 
+
+
+##tf frames
+rosrun tf view_frames
+
+
+##excute python node
+chmod +x object_node.py
+
+
+## transformation node
+rostopic echo /object_pos
