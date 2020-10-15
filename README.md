@@ -1,4 +1,5 @@
 # Sample_Return_Robot
+![alt text](https://github.com/MaiTarekAlazab/Sample_Return_Robot/blob/main/DSC00652.JPG)
 This Project introduces an autonomous sample return
 robot. It was inspired by one of NASA Centennial
 challenges (Sample Return Robot Category). The mission
@@ -16,10 +17,4 @@ The project is based on Robot Operating System
 improve. Also, Modularity and readable codes were
 considered during the design and implementation of the
 robot software for the sake of replication and
-modification. Furthermore, a full hardware design
-procedure was induced in this book for the same reason.
-For future development of the robot, the team is
-recruiting new members to improve both the hardware
-and software of the robot to meet the NASA Centennial
-challenge and participate in the 2020 Sample Handling
-Challenge.
+modification. 
