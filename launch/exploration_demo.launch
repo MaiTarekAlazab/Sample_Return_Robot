@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <include file="$(find tutorial_pkg)/launch/gmapping.launch"></include>
+    
+    <include file="$(find linorobot)/launch/include/move_base/move_base_$(env LINOBASE).launch" />
+
+    <include file="$(find tutorial_pkg)/launch/frontier_exploration.launch"></include>
+
+    <include file="$(find linorobot)/launch/view_robot.launch" />
+  
+
+</launch>
